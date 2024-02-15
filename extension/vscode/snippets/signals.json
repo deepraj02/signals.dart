@@ -3,85 +3,61 @@
     "scope": "dart",
     "prefix": "sig",
     "description": "A Signal Object",
-    "body": [
-      "final $1Signal= signal<$2>($3,autoDispose:$4);"
-    ]
+    "body": ["final $1Signal= signal<$2>($3,autoDispose:$4);"]
   },
   "Async Signal": {
     "scope": "dart",
     "prefix": "asig",
     "description": "An async Signal Object",
-    "body": [
-      "final $1Signal= asyncSignal<$2>($3);"
-    ]
+    "body": ["final $1Signal= asyncSignal<$2>($3);"]
   },
   "Computed": {
     "scope": "dart",
     "prefix": "comp",
     "description": " The computed function lets you combine the values of multiple signals into a new signal that can be reacted to, or even used by additional computeds. When the signals accessed from within a computed callback change, the computed callback is re-executed and its new return value becomes the computed signal’s value.",
-    "body": [
-      "final $1Computed= computed((){",
-      "\treturn $2;",
-      "});"
-    ]
+    "body": ["final $1Computed= computed((){", "\treturn $2;", "});"]
   },
   "AsyncComputed": {
     "scope": "dart",
     "prefix": "ascomp",
     "description": " Async Computed is syntax sugar around [FutureSignal].",
-    "body": [
-      "final $1asyncComputed= computedAsync((){",
-      "\treturn $2;",
-      "});"
-    ]
+    "body": ["final $1asyncComputed= computedAsync((){", "\treturn $2;", "});"]
   },
   "ChangeStackSignal": {
     "scope": "dart",
     "prefix": "csk",
     "description": "Change stack is a way to track the signal values overtime and undo or redo values.",
-    "body": [
-      "final $1tackSignal= ChangeStackSignal($2,limit:$3);"
-    ]
+    "body": ["final $1tackSignal= ChangeStackSignal($2,limit:$3);"]
   },
   "IterableSignal": {
     "scope": "dart",
     "prefix": "its",
     "description": "Iterable signals can be created by extension or method and implement the Iterable interface.",
-    "body": [
-      "final $1iterableSignal= iterableSignal($2);"
-    ]
+    "body": ["final $1iterableSignal= iterableSignal($2);"]
   },
   "ListSignal": {
     "scope": "dart",
     "prefix": "lts",
     "description": "List signals can be created by extension or method and implement the List interface.",
-    "body": [
-      "final $1listSignal= listSignal([$2]);"
-    ]
+    "body": ["final $1listSignal= listSignal([$2]);"]
   },
   "MapSignal": {
     "scope": "dart",
     "prefix": "mps",
     "description": "Map signals can be created by extension or method and implement the Map interface.",
-    "body": [
-      "final $1mapSignal= mapSignal({$2});"
-    ]
+    "body": ["final $1mapSignal= mapSignal({$2});"]
   },
   "SetSignal": {
     "scope": "dart",
     "prefix": "sets",
     "description": "Set signals can be created by extension or method and implement the Set interface.",
-    "body": [
-      "final $1setSignal= setSignal({$2});"
-    ]
+    "body": ["final $1setSignal= setSignal({$2});"]
   },
   "Connect": {
     "scope": "dart",
     "prefix": "cnct",
     "description": "Start with a signal and then use the connect method to create a connector. Streams will feed Signal value.",
-    "body": [
-      "final $1Connect= connect({$2});"
-    ]
+    "body": ["final $1Connect= connect({$2});"]
   },
   "FutureSignal": {
     "scope": "dart",
@@ -117,87 +93,60 @@
     "scope": "dart",
     "prefix": "strms",
     "description": "Returns a streamSignal instance.",
-    "body": [
-      "final $1FutureSignal= futureSignal(()=> $2);"
-    ]
+    "body": ["final $1FutureSignal= futureSignal(()=> $2);"]
   },
   "toSignal()": {
     "scope": "dart",
     "prefix": "tos",
     "description": ".toSignal()",
-    "body": [
-      ".toSignal();"
-    ]
+    "body": [".toSignal();"]
   },
   "isCompleted()": {
     "scope": "dart",
     "prefix": "iscom",
     "description": ".isCompleted()",
-    "body": [
-      ".isCompleted();"
-    ]
+    "body": [".isCompleted();"]
   },
   ".reset()": {
     "scope": "dart",
     "prefix": "rst",
     "description": ".reset()",
-    "body": [
-      ".reset();"
-    ]
+    "body": [".reset();"]
   },
   ".dispose()": {
     "scope": "dart",
     "prefix": "disp",
     "description": ".reset()",
-    "body": [
-      ".dispose();"
-    ]
+    "body": [".dispose();"]
   },
   ".toValueNotifier()": {
     "scope": "dart",
     "prefix": "valnot",
     "description": ".toValueNotifier()",
-    "body": [
-      ".toValueNotifier();"
-    ]
+    "body": [".toValueNotifier();"]
   },
   "Watch builder": {
     "scope": "dart",
     "prefix": "watchb",
     "description": "To watch a signal for changes in Flutter, use the Watch widget. This will only rebuild this widget method and not the entire widget tree.",
-    "body": [
-      "Watch.builder(",
-      "builder: (context) {",
-      "return $1;",
-      "}),"
-    ]
+    "body": ["Watch.builder(", "builder: (context) {", "return $1;", "}),"]
   },
   ".watch()": {
     "scope": "dart",
     "prefix": "wat",
     "description": ".watch() shorthand for Watch.builder.",
-    "body": [
-      ".watch();"
-    ]
+    "body": [".watch();"]
   },
   ".listen()": {
     "scope": "dart",
     "prefix": "lisn",
     "description": "",
-    "body": [
-      ".listen(context,(){",
-      "$1",
-      "});"
-    ]
+    "body": [".listen(context,(){", "$1", "});"]
   },
   "Value Signal": {
     "scope": "dart",
     "prefix": "valsig",
     "description": "Value Signal Class",
-    "body": [
-      "class $1Signal extends ValueSignal<$2>{",
-      "$3",
-      "}"
-    ]
+    "body": ["class $1Signal extends ValueSignal<$2>{", "$3", "}"]
   }
 }
